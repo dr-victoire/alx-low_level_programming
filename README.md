@@ -1,2 +1,1 @@
-# alx-low_level_programming
-a repo for my alx low level programming projects
+readme for the alx low level programming repo
