@@ -1,16 +1,15 @@
 #include <stdio.h>
 
-/** 
-* main - body of code
-*
-* Return - 0
-*/
-
+/**
+ * main - where the body of the code resides
+ *
+ * Return: 0
+ */
 int main(void)
 {
-  char hello_string = "Programming is like building a multilingual puzzle";
+char str1[] = "Programming is like building a multilingual puzzle";
 
-  puts(hello_string);
+puts(str1);
 
-  return 0;
+return 0;
 }
