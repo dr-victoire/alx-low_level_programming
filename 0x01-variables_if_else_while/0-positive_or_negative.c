@@ -2,8 +2,11 @@
 #include <time.h>
 #include <stdio.h>
 
-
-
+/**
+ * main - body where all the code goes
+ * Description: program decides between stuff
+ * Return: 0 always
+ */
 int main(void)
 {
   int n;
