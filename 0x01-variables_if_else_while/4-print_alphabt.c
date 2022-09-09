@@ -11,10 +11,10 @@ int main(void)
 
 	while (x <= 'z')
 	{
-		if (x = 'e') {
+		if (x == 'e') {
 			x++;
 			continue;
-		} else if (x = 'q') {
+		} else if (x == 'q') {
 			x++;
 			continue;
 		}
