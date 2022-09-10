@@ -3,7 +3,7 @@
 /**
  * main - the func where all the code goes
  * Description: Prints all the numbers of base 16
- * Return 0 (Successful)
+ * Return: 0 (Successful)
  */
 int main(void)
 {
