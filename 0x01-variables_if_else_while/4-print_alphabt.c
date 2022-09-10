@@ -12,7 +12,7 @@ int main(void)
 	while (x <= 'z')
 	{
 		if (x == 'e')
-	       	{
+		{
 			x++;
 			continue;
 		} else if (x == 'q')

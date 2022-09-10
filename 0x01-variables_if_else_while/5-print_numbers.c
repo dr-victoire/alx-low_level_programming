@@ -1,19 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - the function where all the code will be written
- * Description: This program prints digits starting with 0
- * Return: ALways returns 0 for success
+ * main - function that bears all codes
+ * Description: Printing no from 0 - 9
+ * Return: 0 (Successful)
  */
 int main(void)
 {
-int a = 0;
+	int a = 0;
 
-while (a < 10)
-{
-    printf("%d", a);
-    a++;
-}
- 
-return (0);
+	while (a < 10)
+	{
+		printf("%d", a);
+		a++;
+	}
+	printf("\n");
+	return (0);
 }
