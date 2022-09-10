@@ -15,8 +15,7 @@ int main(void)
 		{
 			x++;
 			continue;
-		}
-		
+		}		
 		else if (x == 'q')
 		{
 			x++;
