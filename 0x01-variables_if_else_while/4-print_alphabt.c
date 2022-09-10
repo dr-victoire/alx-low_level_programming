@@ -21,6 +21,7 @@ int main(void)
 			x++;
 			continue;
 		}
+
 		putchar(x);
 		x++;
 	}
