@@ -1,19 +1,18 @@
 #include <stdio.h>
 
 /**
- * main: the function where all codes will be written
- * Description: The main function will print all possible combinations
- * of double digit figures
+ * main - Entry Point
+ * Description: printing possible combos of double digits
  * Return: 0 (Successful)
  */
 int main(void)
 {
-	int a = 0;
-	int b = 0;
+	int a;
+	int b;
 
-	while (a <= '9')
+	for (a = '0'; a <= '9'; a++)
 	{
-		while (b <= '9')
+		for (b = '0'; b <='9'; b++)
 		{
 			if (a != b)
 			{
