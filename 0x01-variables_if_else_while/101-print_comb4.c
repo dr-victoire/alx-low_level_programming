@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main: Entry Point for all the codes
+ * main - Entry Point for all the codes
  * Description: This program prints all possible combinations of
  * three digits
  * Return: 0 (Successful)
@@ -23,7 +23,7 @@ int main(void)
 					putchar(a);
 					putchar(b);
 					putchar(c);
-					if (a != '7' ||b != '8' || c != '9')
+					if (a != '7' || b != '8' || c != '9')
 					{
 						putchar(',');
 						putchar(' ');
