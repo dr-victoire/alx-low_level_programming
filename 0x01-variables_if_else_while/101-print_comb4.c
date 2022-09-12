@@ -12,18 +12,18 @@ int main(void)
 	int b = '1';
 	int c = '2';
 
-	for (a = '0'; a <= '9'; a++)
+	for (a = '0'; a <= '7'; a++)
 	{
 		for (b = '1'; b <= '8'; b++)
 		{
-			for (c = '2'; c <= '7'; c++)
+			for (c = '2'; c <= '9'; c++)
 			{
 				if (c > b && b > a)
 				{
 					putchar(a);
 					putchar(b);
 					putchar(c);
-					if (a != '9' || b != '8' || c != '7')
+					if (a != '7' ||b != '8' || c != '9')
 					{
 						putchar(',');
 						putchar(' ');
