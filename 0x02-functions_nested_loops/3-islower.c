@@ -4,7 +4,7 @@
  * _islower - This function checks if a character is lowercase or uppercase
  * Return: 1 (Successful) and 0 (Failure)
  */
-int _intlower(int c)
+int _islower(int c)
 {
 	if (c >= 'a' && c <= 'z')
 	{
