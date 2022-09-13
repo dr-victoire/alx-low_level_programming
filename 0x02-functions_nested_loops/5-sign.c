@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** print_sign - This function tells whether a number is positive or negative
+/**
+ * print_sign - This function tells whether a number is positive or negative
  * @n: Is the int value the function will return
  * Return: 1 (Successful), 0 (Equality) and -1 (Failure)
  */
