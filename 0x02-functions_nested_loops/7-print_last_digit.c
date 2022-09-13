@@ -9,14 +9,18 @@ int print_last_digit(int l)
 {
 	if (l <= 9)
 	{
-		return (l);
+		int a = l * 11;
+
+		return (a);
 	}
 	else
 	{
-		int a;
+		int b;
+		int c;
 
-		a = l % 10;
+		b = l % 10;
+		c = b * 11;
 
-		return (a);
+		return (c);
 	}
 }
