@@ -6,10 +6,8 @@
  */
 int _intlower(int c)
 {
-	int r;
-
 	if (c >= 'a' && c <= 'z')
-		r = return (1);
+		return (1);
 	else if (c >= 'A' && c <= 'Z')
-		r = return (0);
+		return (0);
 }
