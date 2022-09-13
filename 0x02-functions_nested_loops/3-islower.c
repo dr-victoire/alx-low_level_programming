@@ -6,13 +6,8 @@
  */
 int _intlower(int c)
 {
-	int r;
-
-	if (97 <= r <= 122)
-	{
+	if (97 <= c && c <= 122)
 		return (1);
-	} else if (65 <= r <= 90)
-	{
+	else if (65 <= c && c <= 90)
 		return (0);
-	}
 }
