@@ -8,13 +8,8 @@ int _intlower(int c)
 {
 	int r;
 
-	if ("97" <= c && c <= "122")
-	{
-		r = 1;
-		return (1);
-	} else if (65 <= c && c <= 90)
-	{
-		r = 0;
-		return (0);
-	}
+	if (c >= 'a' && c <= 'z')
+		r = return (1);
+	else if (c >= 'A' && c <= 'Z')
+		r = return (0);
 }
