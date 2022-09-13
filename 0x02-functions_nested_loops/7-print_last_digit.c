@@ -7,8 +7,16 @@
  */
 int print_last_digit(int l)
 {
-	int r;
-	r = l % 100;
+	if (l <= 9)
+	{
+		return (l);
+	}
+	else
+	{
+		int a;
 
-	return (r);
+		a = l % 10;
+
+		return (a);
+	}
 }
