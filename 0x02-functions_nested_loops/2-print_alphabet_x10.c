@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** print_alphabet_x10 - This function prints the alphabet x10 in lowercase
+/**
+ * print_alphabet_x10 - This function prints the alphabet x10 in lowercase
  * Return: 0 (Successful)
  */
 void print_alphabet_x10(void)
@@ -13,7 +14,7 @@ void print_alphabet_x10(void)
 		for (b = 'a'; b <= 'z'; b++)
 		{
 			_putchar(b);
-			_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
