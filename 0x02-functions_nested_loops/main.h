@@ -8,6 +8,7 @@ int _islower(int c);
 int print_sign(int n);
 int print_last_digit(int l);
 void times_table(void);
+int add(int a, int b);
 void print_to_98(int n);
 
 #endif
