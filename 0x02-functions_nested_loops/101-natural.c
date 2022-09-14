@@ -6,7 +6,7 @@
  * that are less than 1024
  * Return: 0 (Successful)
  */
-int main()
+int main(void)
 {
 	int t;
 	int f;
@@ -24,4 +24,6 @@ int main()
 	}
 	sum_total = sum_t + sum_f;
 	printf("%d\n", sum_total);
+
+	return (0);
 }
