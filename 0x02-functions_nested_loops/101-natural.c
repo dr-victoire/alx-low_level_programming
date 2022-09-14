@@ -8,16 +8,20 @@
  */
 int main(void)
 {
-	int a;
-	int result;
+	int t;
+	int f;
+	int sum_t;
+	int sum_f;
+	int sum_total;
 
-	for (a = 0; a < 1024; a++)
+	for (t = 0; t < 1024; t = t + 3)
 	{
-		if ((a % 3 == 0) || (a % 5 == 0))
-		{
-			a += a;
-			result = a;
-		}
-		printf("%d\n", result);
+		sum_t += t;
 	}
+	for (f = 0; f < 1024; f = f + 5)
+	{
+		sum_f += f;
+	}
+	sum_total = sum_t + sum_f;
+	printf("%d\n", sum_total);
 }
