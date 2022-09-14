@@ -13,18 +13,19 @@ int main(void)
 	long int b = 2;
 	long int c = a + b;
 
-	printf("%ld, %ld, ", a, b);
+	printf("%ld, %ld, %ld, ", a, b, c);
 
-	for (i = 3; i <= 50; ++i)
+	for (i = 5; i <= 50; i++)
 	{
-		printf("%ld, ", c);
 		a = b;
 		b = c;
 		c = a + b;
+		printf("%ld, ", c);
 		if (c == 20365011074)
 		{
 			printf("%ld\n", c);
 		}
 	}
+	printf("20365011074\n");
 	return (0);
 }
