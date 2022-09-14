@@ -6,7 +6,7 @@
  * @n: The int value the function takes as argument
  * Return: 0 (Successful)
  */
-int print_to_98(int n)
+void print_to_98(int n)
 {
 	while (n <= 98)
 	{
