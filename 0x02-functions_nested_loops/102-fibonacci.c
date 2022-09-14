@@ -9,15 +9,15 @@
 int main(void)
 {
 	int i;
-	int a = 1;
-	int b = 2;
-	int c = a + b;
+	long int a = 1;
+       	long int b = 2;
+	long int c = a + b;
 
-	printf("%d, %d, ", a, b);
+	printf("%ld, %ld, ", a, b);
 
 	for (i = 3; i <= 50; ++i)
 	{
-		printf("%d, ", c);
+		printf("%ld, ", c);
 		a = b;
 		b = c;
 		c = a + b;
