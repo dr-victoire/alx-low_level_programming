@@ -9,14 +9,14 @@
 int main(void)
 {
 	int i;
-	unsigned long int a = 1;
-	unsigned long int b = 2;
-	unsigned long int c = a + b;
-	printf("%lu, %lu, ", a, b);
+	long int a = 1;
+	long int b = 2;
+	long int c = a + b;
+	printf("%ld, %ld, ", a, b);
 
-	for (i = 3; i <= 98; ++i);
+	for (i = 3; i <= 98; ++i)
 	{
-		printf("%lu, ", c);
+		printf("%ld, ", c);
 		a = b;
 		b = c;
 		c = a + b;
