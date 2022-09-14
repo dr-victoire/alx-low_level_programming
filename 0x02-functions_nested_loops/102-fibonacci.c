@@ -8,16 +8,19 @@
  */
 int main(void)
 {
+	int i;
 	int a = 1;
 	int b = 2;
-	int result;
+	int c = a + b;
 
-	for (int i = 1; i < 50; i++)
+	printf("%d, %d, ", a, b);
+
+	for (i = 3; i <= 50; ++i)
 	{
-		printf("%d", a);
-		result = a + b;
-		result = b;
-		printf("%d, ", b);
+		printf("%d, ", c);
+		a = b;
+		b = c;
+		c = a + b;
 	}
-	printf("\n");
+	return (0);
 }
