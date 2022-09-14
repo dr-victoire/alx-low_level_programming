@@ -6,7 +6,7 @@
  * that are less than 1024
  * Return: 0 (Successful)
  */
-int main(void)
+int main()
 {
 	int t;
 	int f;
