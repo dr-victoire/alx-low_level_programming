@@ -10,17 +10,17 @@ int main(void)
 {
 	int t;
 	int f;
-	int sum_t;
-	int sum_f;
+	int sum_t = 0;
+	int sum_f = 0;
 	int sum_total;
 
 	for (t = 0; t < 1024; t = t + 3)
 	{
-		sum_t += t;
+		sum_t = sum_t + t;
 	}
 	for (f = 0; f < 1024; f = f + 5)
 	{
-		sum_f += f;
+		sum_f = sum_f + f;
 	}
 	sum_total = sum_t + sum_f;
 	printf("%d\n", sum_total);
