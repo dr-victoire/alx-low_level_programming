@@ -22,7 +22,14 @@ int main(void)
 		}
 		else if (a % 5 == 0)
 		{
-			printf("Buzz ");
+			if (a != 100)
+			{
+				printf("Buzz ");
+			}
+			else
+			{
+				printf("Buzz");
+			}
 		}
 		else if (a % 3 == 0)
 		{
