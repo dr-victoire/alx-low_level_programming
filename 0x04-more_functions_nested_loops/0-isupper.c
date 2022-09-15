@@ -5,7 +5,6 @@
  * or lower case
  * Return: 1 (Successful) or 0 (Failure)
  */
-
 int _isupper(int c)
 {
 	if (c >= 'A' || c <= 'Z')
