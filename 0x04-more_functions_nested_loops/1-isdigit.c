@@ -3,6 +3,7 @@
 /**
  * _isdigit - checks whether or not a character is a digit
  * @c: This is the integer it takes as an argument
+ *
  * Return: 1 (if c is a digit) or 0 (otherwise)
  */
 
