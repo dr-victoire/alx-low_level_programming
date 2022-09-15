@@ -15,11 +15,13 @@ void print_line(int n)
 	{
 		_putchar('\n');
 	}
-
-	while (line <= n)
+	else
 	{
-		_putchar('_');
-		line++;
+		while (line <= n)
+		{
+			_putchar('_');
+			line++;
+		}
 	}
 
 	_putchar('\n');
