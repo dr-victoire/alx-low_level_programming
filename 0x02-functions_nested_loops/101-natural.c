@@ -1,29 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - The function that bears all the code
- * Description: This program prints the sum of all multiples of 3 and 5
- * that are less than 1024
+ * main - prints the sum of multiples of 3 and 5
+ *
  * Return: 0 (Successful)
  */
+
 int main(void)
 {
-	int t;
-	int f;
-	int sum_t = 0;
-	int sum_f = 0;
-	int sum_total;
+	int a;
+	int sum;
 
-	for (t = 0; t < 1024; t = t + 3)
+	for (a = 0; a < 1024; a++)
 	{
-		sum_t = sum_t + t;
+		if ((a % 3 == 0) || (a % 5 == 0))
+		{
+			sum += i;
+		}
 	}
-	for (f = 0; f < 1024; f = f + 5)
-	{
-		sum_f = sum_f + f;
-	}
-	sum_total = sum_t + sum_f;
-	printf("%d\n", sum_total);
+	printf("%d\n", sum);
 
 	return (0);
 }
