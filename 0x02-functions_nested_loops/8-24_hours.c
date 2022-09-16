@@ -2,30 +2,74 @@
 
 /**
  * jack_bauer - This function prints every single minute of Jack Bauer
+ *
  * Return: 0 (Successful)
  */
+
 void jack_bauer(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int i;
+	int j;
+	int k = i % 10;
+	int l = j % 10;
 
-	for (a = '0'; a <= '2'; a++)
+	for (i = 0; i < 24; i++)
 	{
-		for (b = '0'; b <= '9'; b++)
+		if (i < 10)
 		{
-			for (c = '0'; b <= '5'; c++)
+			_putchar('0');
+			_putchar(i);
+			_putchar(':');
+		}
+		else if (i < 20)
+		{
+			_putchar('1');
+			_putchar(k);
+			_putchar(':');
+		}
+		else
+		{
+			_putchar('2');
+			_putchar(k);
+			_putchar(':');
+		}
+		for (j = 0; j < 60; j++)
+		{
+			if (j < 10)
 			{
-				for (d = '0'; d <= '9'; d++)
-				{
-					_putchar(a);
-					_putchar(b);
-					_putchar(':');
-					_putchar(c);
-					_putchar(d);
-					_putchar('\n');
-				}
+				_putchar('0');
+				_putchar(j);
+				_putchar('\n');
+			}
+			else if (j < 20)
+			{
+				_putchar('1');
+				_putchar(l);
+				_putchar('\n');
+			}
+			else if (j < 30)
+			{
+				_putchar('2');
+				_putchar(l);
+				_putchar('\n');
+			}
+			else if (j < 40)
+			{
+				_putchar('3');
+				_putchar(l);
+				_putchar('\n');
+			}
+			else if (j < 50)
+			{
+				_putchar('4');
+				_putchar(l);
+				_putchar('\n');
+			}
+			else
+			{
+				_putchar('5');
+				_putchar(l);
+				_putchar('\n');
 			}
 		}
 	}
