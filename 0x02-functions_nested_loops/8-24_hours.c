@@ -8,16 +8,16 @@
 
 void jack_bauer(void)
 {
-	int i = 0;
-	int j = 0;
-	int k = i % 10;
-i	int l = j % 10;
+	int i;
+	int j;
+	int k;
+	int l;
 
 	for (i = 0; i < 24; i++)
 	{
 		if (i < 10)
 		{
-			_putchar('0');
+	 		_putchar('0');
 			_putchar(i);
 			_putchar(':');
 		}
