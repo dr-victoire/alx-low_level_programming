@@ -9,31 +9,41 @@
 
 void print_times_table(int n)
 {
-	int a;
-	int b;
-	int c;
-
-	for (a = 0; a <= n; a++)
+	if (n < 0 || n > 15)
 	{
-		_putchar('0');
-
-		for (b = 1; b <= n; b++)
-		{
-			_putchar(',');
-			_putchar(' ');
-
-			c = a * b;
-
-			if (c <= n)
-			{
-				_putchar(' ');
-			}
-			else
-			{
-				_putchar((c / 10) + '0');
-			}
-			_putchar((c % 10) + '0');
-		}
 		_putchar('\n');
+	}
+	else
+	{
+		int a;
+		int b;
+		int prod;
+
+		for (a = 0; a <= n; a++)
+		{
+			_putchar('0);
+
+			for (b = 1; b <= n; b++)
+			{
+				_putchar(',');
+				_putchar(' ');
+				_putchar(' ');
+
+				prod = b * a;
+
+				if (prod <= n)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
+				else
+				{
+					_putchar((c / 10) + '0')
+				}
+
+				_putchar((c % 10) + '0');
+			}
+			_putchar('\n');
+		}
 	}
 }
