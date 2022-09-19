@@ -9,4 +9,4 @@ C - POINTERS, ARRAYS AND STRINGS (README FILE)
 * project 4 - prints a string in reverse
 * project 5 - reverses a string
 * project 6 - prints every other character of a string starting with the first character
-
+* project 8 - prints the elementsof an array
