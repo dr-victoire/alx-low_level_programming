@@ -15,7 +15,7 @@ void _puts(char *str)
 	{
 		word = *str;
 		_putchar(word);
-		*str++;
+		str++;
 	}
 
 	_putchar('\n');
