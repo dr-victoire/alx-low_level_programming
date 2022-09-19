@@ -6,3 +6,4 @@ C - POINTERS, ARRAYS AND STRINGS (README FILE)
 * project 1 - swaps th two integers
 * project 2 - returns the length of a string
 * project 3 - prints a string and a newline
+* project 4 - prints a string in reverse
