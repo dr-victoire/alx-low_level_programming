@@ -7,3 +7,5 @@ C - POINTERS, ARRAYS AND STRINGS (README FILE)
 * project 2 - returns the length of a string
 * project 3 - prints a string and a newline
 * project 4 - prints a string in reverse
+* project 6 - prints every other character of a string starting with the first character
+
