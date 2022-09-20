@@ -27,7 +27,7 @@ void puts_half(char *str)
 		}
 	}
 
-	for (c = b - 1; str[c] != '\0'; c++)
+	for (c = b + 1; str[c] != '\0'; c++)
 	{
 		_putchar(str[c]);
 	}
