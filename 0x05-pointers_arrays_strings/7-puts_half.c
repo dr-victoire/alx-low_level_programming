@@ -20,6 +20,10 @@ void puts_half(char *str)
 		{
 			b = (a - 1) / 2;
 		}
+		else if (a == 1)
+		{
+			break;
+		}
 		else
 		{
 			b = a / 2;
