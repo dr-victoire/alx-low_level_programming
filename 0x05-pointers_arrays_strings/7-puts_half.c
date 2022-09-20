@@ -2,7 +2,7 @@
 
 /**
  * puts_half - prints the second half of a string
- * @str: the string argument
+ * @str: the string argument it takes
  *
  * Return: 0 (Successful)
  */
@@ -11,25 +11,25 @@ void puts_half(char *str)
 {
 	int a = 0;
 	int b;
+	int c;
 
 	while (str[a] != '\0')
 	{
 		a++;
+
+		if ((a + 1) % 2 != 0)
+		{
+			b = (a - 1) / 2;
+		}
+		else
+		{
+			b = a / 2;
+		}
 	}
 
-	if (a % 2 != 0)
+	for (c = b; str[c] != '\0'; c++)
 	{
-		for (b = (a - 1) / 2; b <= str[a]; b++)
-		{
-			_putchar(b);
-		}
-	}
-	else
-	{
-		for (b = (a / 2); b <= str[a]; b++)
-		{
-			_putchar(b);
-		}
+		_putchar(str[c]);
 	}
 
 	_putchar('\n');
