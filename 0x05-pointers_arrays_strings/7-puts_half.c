@@ -21,6 +21,10 @@ void puts_half(char *str)
 		{
 			b = (a - 1) / 2;
 		}
+		else if (str[a] == ' ')
+		{
+			_putchar('\n');
+		}
 		else
 		{
 			b = a / 2;
