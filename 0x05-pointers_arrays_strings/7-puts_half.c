@@ -20,7 +20,7 @@ void puts_half(char *str)
 		{
 			b = (a - 1) / 2;
 		}
-		else if (a == 1)
+		else if (str[a] == " ")
 		{
 			break;
 		}
