@@ -1,43 +1,40 @@
 #include <stdio.h>
 
 /**
- * main - the function where all the codes will be written
- * Description: This program prints all the possible combinations
- * of two two-digit numbers
+ * main - Entry point function
+ *
+ * Description: This program prints every possible combination
+ * of two two-digit numbers followed by a space nd a comma
  * Return: 0 (Successful)
  */
+
 int main(void)
 {
-	int a;
-	int b;
-	int c;
-	int d;
+	int i;
+	int j;
 
-	for (a = '0'; a <= '9'; a++)
+	for (i = 0; i < 100; i++)
 	{
-		for (b = '0'; b <= '8'; b++)
+		for (j = 0; j < 100; j++)
 		{
-			for (c = '0'; c <= '9'; c++)
+			if (i < j)
 			{
-				for (d = '0'; d <= '9'; d++)
+				putchar((i / 10) + 48);
+				putchar((i % 10) + 48);
+				putchar(' ');
+				putchar((j / 10) + 48);
+				putchar((j % 10) + 48);
+
+				if (i != 98 || j != 99)
 				{
-					if (d >= c && c >= b && b >= a)
-					{
-						putchar(a);
-						putchar(b);
-						putchar(' ');
-						putchar(c);
-						putchar(d);
-						if (a != '9'|| b != '8'|| c != '9'|| d != '9')
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+					putchar(',');
+					putchar(' ');
 				}
 			}
 		}
 	}
+
 	putchar('\n');
+
 	return (0);
 }
