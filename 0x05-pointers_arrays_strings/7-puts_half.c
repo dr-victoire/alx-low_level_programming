@@ -21,19 +21,17 @@ void puts_half(char *str)
 		{
 			b = (a - 1) / 2;
 		}
-		else if (str[a] == ' ')
-		{
-			_putchar('\n');
-		}
 		else
 		{
 			b = a / 2;
 		}
+
+		n++;
 	}
 
-	for (c = b + 1; str[c] != '\0'; c++)
+	for (a = b; str[a] != '\0'; a++)
 	{
-		_putchar(str[c]);
+		_putchar(str[a]);
 	}
 
 	_putchar('\n');
