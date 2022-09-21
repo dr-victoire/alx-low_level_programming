@@ -11,3 +11,4 @@ C - POINTERS, ARRAYS AND STRINGS (README FILE)
 * project 6 - prints every other character of a string starting with the first character
 * project 7 - prints the second half of a string
 * project 8 - prints the elementsof an array
+* project 9 - copies the contents of one string into another string
