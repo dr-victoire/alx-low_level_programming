@@ -8,7 +8,7 @@
  * Return: *dest
  */
 
-char _strcpy(char *dest, char *str)
+char *_strcpy(char *dest, char *str)
 {
 	/* Initializing an integer variable */
 	int i;
