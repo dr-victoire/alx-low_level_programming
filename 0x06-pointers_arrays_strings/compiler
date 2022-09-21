@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc main.h main.c _putchar.c 0-strcat.c
