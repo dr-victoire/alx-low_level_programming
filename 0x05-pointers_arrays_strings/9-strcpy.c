@@ -10,17 +10,28 @@
 
 char *_strcpy(char *dest, char *str)
 {
-	/* Initializing an integer variable */
+	/*
+	 * Initializing an integer variable
+	 */
 	int i;
 
-	/* Using a for loop to loop through the *str
-	 * until the null character */
+	/*
+	 * Using a for loop to loop through the *str
+	 * until the null character
+	 */
 	for (i = 0; str[i] != '\0'; i++)
 	{
-		/* while the iteration has not yet gotten to
-		 * the null character, copy *str into *dest */
-		str[i] = dest[i];
+		/*
+		 * while the iteration has not yet gotten to
+		 * the null character, copy *str into *dest
+		 */
+		dest[i] = str[i];
 	}
+
+	/*
+	 * adding the null character
+	 */
+	dest[i] = '\0';
 
 	return (dest);
 }
