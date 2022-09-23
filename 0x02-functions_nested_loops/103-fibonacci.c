@@ -9,27 +9,30 @@
 int main(void)
 {
 	int i;
-	unsigned long int a = 1;
-	unsigned long int b = 2;
-	unsigned long int c = a + b;
-	unsigned long int sum;
+	unsigned long int a = 0;
+	unsigned long int b = 1;
+	unsigned long int c;
+	float sum;
 
-	for (i = 3; i <= 4000000; i++)
+	while (true)
 	{
-		a = b;
-		b = c;
 		c = a + b;
-	}
 
-	for (c = 3; c <= 4000000; c++)
-	{
+		if (c > 4000000)
+		{
+			break;
+		}
+
 		if (c % 2 == 0)
 		{
 			sum += c;
 		}
+
+		a = b;
+		b = c;
 	}
 
-	printf("%lu\n", sum);
+	printf("%.0f\n", sum);
 
 	return (0);
 }
