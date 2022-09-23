@@ -14,7 +14,7 @@ int main(void)
 	unsigned long int c;
 	float sum;
 
-	while (true)
+	while (1)
 	{
 		c = a + b;
 
