@@ -10,12 +10,12 @@
 int main(void)
 {
 	char *s = "hello world";
-	char *f = "olleh";
-	unsigned int n;
+	char *f = "world";
+	char *t;
 
-	n = _strspn(s, f);
+	t = _strstr(s, f);
 
-	printf("%u\n", n);
+	printf("%s\n", t);
 
 	return (0);
 }
