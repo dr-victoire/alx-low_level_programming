@@ -12,3 +12,4 @@ PROJECT DESCRIPTION
 * Project 6 - a function that prints the chessboard
 * Project 7 - a function that prints the sum of the diagonals of a square matrix of integers
 * Project 8 - a function that sets the value of a pointer to a char
+* Project 9 - a file that contains the password for the crackme2 executable file
