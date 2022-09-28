@@ -9,7 +9,10 @@
 
 int main(void)
 {
-	_print_rev_recursion("Corbin Coleman");
+	int r;
+
+	r = _strlen_recursion("Corbin Coleman");
+	printf("%d\n", r);
 
 	return (0);
 }
