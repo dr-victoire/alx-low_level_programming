@@ -43,7 +43,7 @@ int check_square_root(int i, int n)
 	}
 	else if ((i * i) == n)
 	{
-		return (1);
+		return (i);
 	}
 	else
 	{
