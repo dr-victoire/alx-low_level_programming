@@ -37,15 +37,12 @@ int check_palindrome(char *s, int i)
 	{
 		return (1);
 	}
-	else if (*s == *(s + 1))
+	if (*s == *(s + 1))
 	{
 		return (check_palindrome(s + 1, i - 2));
 	}
-	else
-	{
-		return (0);
-	}
 
+	return (0);
 }
 
 /**
