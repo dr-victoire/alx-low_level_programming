@@ -41,8 +41,6 @@ int check_palindrome(char *s, int i)
 	{
 		return (check_palindrome(s + 1, i - 2));
 	}
-
-	return (0);
 }
 
 /**
