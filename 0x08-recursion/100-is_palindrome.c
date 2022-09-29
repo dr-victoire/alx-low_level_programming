@@ -13,8 +13,6 @@ int is_palidrome(char *s);
 
 int get_strlen(char *s)
 {
-	int len = 0;
-
 	if (*s == '\0')
 	{
 		return (0);
