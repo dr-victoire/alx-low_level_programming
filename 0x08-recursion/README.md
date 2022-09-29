@@ -9,4 +9,4 @@ This folder contains all the tasks for this project on recursions
 * Task 4 - Writrite a function that returns the value of x raised to y
 * Task 5 - Write a function that returns the natural square root of a number
 * Task 6 - Write a function that returns 1 if the integer input is a prime number and 0 if otherwise
-* Task 7 - 
+* Task 7 - Write a function that returns 1 if a string is a palindrome and 0 if otherwise 
