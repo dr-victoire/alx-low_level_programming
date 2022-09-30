@@ -3,13 +3,15 @@
 /**
  * main - Entry Point
  * @argc: the count of the arguments
- * @argv: the array of string values of the arguments
+ * @argv: the array of the argc arguments
  *
  * Return: 0 (Successful)
  */
 
 int main(int argc, char *argv[])
 {
+	(void)argv;
+
 	printf("%d\n", argc);
 	return (0);
 }
