@@ -22,14 +22,15 @@ char *create_array(unsigned int size, char c)
 	if (size > 0)
 	{
 		str = malloc(sizeof(*str) * size);
+
+		if (str == NULL)
+		{
+			return (NULL);
+		}
 		for (i = 0; i < size; i++)
 		{
 			str[i] = c;
 		}
-	}
-	if (str == NULL)
-	{
-		return (NULL);
 	}
 
 	return (str);
