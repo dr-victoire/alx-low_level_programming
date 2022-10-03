@@ -10,7 +10,7 @@
  * Return: Nothing
  */
 
-void print_diagsums(int *a, int size)
+void print_diagsums(int a[], int size)
 {
 	int i, j;
 	int left_sum = 0;
@@ -22,12 +22,12 @@ void print_diagsums(int *a, int size)
 		{
 			if (i == j)
 			{
-				left_sum = left_sum + a[i][j];
+				left_sum += a[i][j];
 			}
 
 			if ((i + j) == (size - 1))
 			{
-				right_sum = right_sum + a[i][j];
+				right_sum += a[i][j];
 			}
 		}
 	}
