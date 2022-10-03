@@ -12,11 +12,11 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char str;
+	char *str;
 
 	if (size == 0)
 	{
-		return (NULL)
+		return (NULL);
 	}
 	else if (size > 0)
 	{
