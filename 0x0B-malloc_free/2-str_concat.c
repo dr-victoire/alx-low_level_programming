@@ -39,15 +39,15 @@ char *str_concat(char *s1, char *s2)
 
 	for (i = 0; i < len1; i++)
 	{
-		s1[i] = result[i];
+		result[i] = s1[i];
 	}
 
 	for (j = 0; j < len2; j++)
 	{
-		s2[j] = result[j];
+		result[j] = s2[j];
 	}
 
-	result = '\0';
+	result[len] = '\0';
 
 	return (result);
 }
