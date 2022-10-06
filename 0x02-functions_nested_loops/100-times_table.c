@@ -7,7 +7,7 @@
  * Return: Nothing
  */
 
-void print_times_tables(int n)
+void print_times_tabl(int n)
 {
 	int i, j, prod;
 
