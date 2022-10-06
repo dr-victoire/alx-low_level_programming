@@ -1,42 +1,50 @@
 #include "main.h"
 
 /**
- * print_times_table - prints the time table from 0 - n
- * @n: the integer it takes as argument
+ * print_times_table - prints times table till n
+ * @n: the times table to be printed
  *
- * Return: 0 (Successful)
+ * Return: Nothing
  */
 
-void print_times_table(int n)
+void print_times_tables(int n)
 {
-	int i;
-	int j;
-	int prod;
+	int i, j, prod;
 
-	if (n <= 15 && n >= 0)
+	if (n < 15 && n > 0)
 	{
 		for (i = 0; i <= n; i++)
 		{
-			_putchar('0');
-
-			for (j = 1; j <= n; j++)
+			for (j = 0; j <= n; j++)
 			{
-				_putchar(',');
-				_putchar(' ');
-
-				prod = i * j;
-
-				if (prod <= 99)
+				prod = j * i;
+				if (j == 0)
+					_putchar(prod + '0');
+				else if (prod < 10 && j != 0)
 				{
+					_putchar(',');
 					_putchar(' ');
-				}
-				else if (prod >= 100)
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(prod + '0');
+				} else if (prod >= 10 && prod < 100)
 				{
+					_putchar(',');
+					_putchar(' ');
+					_putchar(' ');
+					_putchar(prod / 10) + '0');
+					_putchar(prod % 10) + '0');
+				} else if (prod <= 100)
+				{
+					_putchar(',');
+					_putchar(' ');
 					_putchar((prod / 100) + '0');
-					_putchar((prod / 10) % 10 + '0');
+					_putchar(((prod / 10) % 10) + '0');
+					_putchar((prod % 10) + '0');
 				}
-
 			}
+
+			_putchar('\n');
 		}
 	}
 }
