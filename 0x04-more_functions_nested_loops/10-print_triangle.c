@@ -1,26 +1,30 @@
 #include "main.h"
 
 /**
- * print_triangle - prints triangle
- * @size: the size of the triangle to be printed
+ * print_triangle - prints a triangle
+ * @size: the size to print
  *
  * Return: Nothing
  */
 
 void print_triangle(int size)
 {
-	int i, j;
+	int col, space, hash;
 
 	if (size <= 0)
 		_putchar('\n');
 	else
 	{
-		for (i = 0; i <= size; i++)
+		for (col = 1; col <= size; col++)
 		{
-			for (j = 0; j <= size; j++)
+			for (space = size - col; space >= 1; space--)
 			{
-				if (j < i)
-					_putchar('#');
+				_putchar(' ');
+			}
+
+			for (hash = 1; hash <= col; hash++)
+			{
+				_putchar('#');
 			}
 
 			_putchar('\n');
