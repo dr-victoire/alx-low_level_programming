@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdarg.h>
 
-/**#
- * print_numbers - prints numbers
+/**
+ * print_numbers - it prints some numbers
  * @separator: the string between the numbers
  * @n: the number of numbers to be printed
  *
