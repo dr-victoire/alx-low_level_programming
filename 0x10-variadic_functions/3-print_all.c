@@ -11,8 +11,7 @@
 
 void print_all(const char * const format, ...)
 {
-	int i = 0;
-	int a;
+	int i = 0, a;
 	char *str;
 
 	va_list(arglist);
@@ -46,7 +45,7 @@ void print_all(const char * const format, ...)
 				break;
 		}
 		if (format[i + 1] != '\0' && a == 0)
-			printf(",");
+			printf(", ");
 		i++;
 	}
 	printf("\n");
