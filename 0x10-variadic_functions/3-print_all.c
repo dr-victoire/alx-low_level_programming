@@ -15,7 +15,7 @@ void print_all(const char * const format, ...)
 	int a;
 	char *str;
 
-	va_list(arglsit);
+	va_list(arglist);
 	va_start(arglist, format);
 
 	while (format != NULL && format[i] != '\0')
@@ -49,5 +49,5 @@ void print_all(const char * const format, ...)
 			printf(",");
 		i++;
 	}
-	printf("\n")
+	printf("\n");
 }
