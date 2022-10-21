@@ -11,10 +11,6 @@ size_t print_list(list_t *h)
 {
 	int node_count = 0;
 
-	h = malloc(sizeof(list_t) * node_count);
-
-	if (h == NULL)
-		return (-1);
 	while (h)
 	{
 		if (str == NULL)
