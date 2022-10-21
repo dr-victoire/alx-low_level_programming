@@ -22,6 +22,7 @@ size_t print_list(list_t *h)
 		else
 		{
 			printf("[%d] %s\n", h->len, h->str);
+			h = h->next;
 		}
 		node_count++;
 	}
