@@ -13,11 +13,10 @@ int sum_listint(listint_t *head)
 	int i = 0;
 
 	temp = malloc(sizeof(listint_t));
-	/*if (temp == NULL)
-		return (NULL);*/
-	if (head == NULL)
-		return (0);
 	temp = head;
+	if (temp == NULL)
+		return (0);
+
 	while (temp != NULL)
 	{
 		i += temp->n;
