@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 
+void print_grid(int **grid, int width, int height);
 /**
  * alloc_grid - allocates a 2D grid
  * @wodth: the width
@@ -16,9 +17,13 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	p = malloc(sizeof(int) * (width * height));
+	p =(int **)malloc(sizeof(int *) * height);
 	if (p == NULL)
 		return (NULL);
+	for (i = 0; i < height; i++)
+	{
+		p[i] = (int *)malloc(sizeof(int) * width);
+	}
 	for (i = 0; i < height; i++)
 	{
 		for (j = 0; j < width; j++)
@@ -27,5 +32,31 @@ int **alloc_grid(int width, int height)
 			_putchar(p[i][j]);
 		}
 	}
-	return (*p);
+	return (p);
+}
+
+/**
+ * print_grid - prints thebaddress of a 2d grid of integers
+ * @grid: ghe grid
+ * @width: the width
+ * @height: thr height
+ *
+ * Return: Nothing
+ */
+
+void print_grid(int **grid, int width, int height)
+{
+	int w, h = 0;
+
+	while (h < height)
+	{
+		w = 0;
+		while (w < width)
+		{
+			printf("%d", grid[h][w]);
+			w++;
+		}
+		printf("\n");
+		h++;
+	}
 }
