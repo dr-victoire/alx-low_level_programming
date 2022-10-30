@@ -1,13 +1,11 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- * alloc_grid - gives a 2D array of integers
- * @width: array's rows
- * @height: arrray's collumns
+ * alloc_grid - allocates a 2D grid
+ * @wodth: the width
+ * @heught: the height
  *
- * Return: Pointer to the array of integers
- * On Failure, return NULL
+ * Return: a pointer to the grid
  */
 
 int **alloc_grid(int width, int height)
@@ -17,22 +15,16 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	p = malloc(sizeof(int) * height);
-
+	p = malloc(sizeof(int) * (width * height));
 	if (p == NULL)
 		return (NULL);
-
 	for (i = 0; i < height; i++)
 	{
-		p[i] = malloc(sizeof(int) * width);
-		if (p[i] == NULL)
-			return (NULL);
-
 		for (j = 0; j < width; j++)
 		{
 			p[i][j] = 0;
+			_putchar(p[i][j]);
 		}
 	}
-
-	return (p);
+	return (*p);
 }
