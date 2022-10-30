@@ -1,13 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
 
-void print_grid(int **grid, int width, int height);
+/*void print_grid(int **grid, int width, int height);*/
 /**
  * alloc_grid - allocates a 2D grid
  * @wodth: the width
  * @heught: the height
  *
- * Return: a pointer to the grid
+ * Return: a pointer to the gri
  */
 
 int **alloc_grid(int width, int height)
@@ -44,6 +44,7 @@ int **alloc_grid(int width, int height)
  * Return: Nothing
  */
 
+/*
 void print_grid(int **grid, int width, int height)
 {
 	int w, h = 0;
@@ -59,4 +60,4 @@ void print_grid(int **grid, int width, int height)
 		printf("\n");
 		h++;
 	}
-}
+}*/
