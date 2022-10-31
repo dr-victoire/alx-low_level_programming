@@ -16,8 +16,8 @@ int main(void)
 	add_nodeint_end(&head, 2);
 	add_nodeint_end(&head, 90);
 	add_nodeint_end(&head, 77);
-	sum = sum_listint(head);
-	printf("sum = %d\n", sum);
+	node = get_nodeint_at_index(head, 3)
+	printf("%d\n", node->n);
 
 	free_listint2(&head);
 	return (0);
