@@ -18,18 +18,18 @@ ssize_t read_textfile(char *filename, size_t letters)
 		return (0);
 	buffer = malloc(sizeof(char) * letters);
 	if (buffer == NULL)
-		return (NULL);
+		return (0);
 	o = open(filename, O_RDONLY);
 	r = read(o, buffer, letters);
 	w = write(STDOUT_FILENO, buffer, r);
 
-	if (r == -1 ¦¦ w == -1 ¦¦ w != r ¦¦ o == -1)
+	if (r == -1 || w == -1 || w != r || o == -1)
 	{
 		free(buffer);
 		return (0);
 	}
 	free(buffer);
-	close(fd);
+	close(o);
 
 	return (w);
 }
